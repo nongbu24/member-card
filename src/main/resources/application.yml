@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: member-card
+  profiles:
+    active: local
+
+management:
+  endpoint:
+    health:
+      probes:
+        enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: health
