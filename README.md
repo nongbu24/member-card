@@ -1,3 +1,4 @@
+<img width="1672" height="491" alt="스크린샷 2026-05-21 오후 6 34 27(2)" src="https://github.com/user-attachments/assets/cedb6cd0-9646-462b-b98c-db84502bca13" />
 # Member Card
 
 팀원 정보를 저장하고 조회할 수 있는 Spring Boot 기반 API 서버입니다.  
@@ -68,3 +69,4 @@ RDS 보안 그룹의 인바운드 규칙에는 직접 IP 주소를 등록하지 
 이를 통해 EC2에서만 RDS에 접근할 수 있도록 보안 그룹 체이닝을 구성했습니다.
 
 아래 스크린샷에서 RDS 보안 그룹 인바운드 규칙의 Source가 0.0.0.0/0이 아닌 EC2 보안 그룹 ID로 설정되어 있음을 확인할 수 있습니다.
+<img width="1672" height="491" alt="스크린샷 2026-05-21 오후 6 34 27(2)" src="https://github.com/user-attachments/assets/aef6415f-fe6d-4be3-9ef2-ed874e480865" />
