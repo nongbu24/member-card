@@ -1,4 +1,3 @@
-<img width="1672" height="491" alt="스크린샷 2026-05-21 오후 6 34 27(2)" src="https://github.com/user-attachments/assets/cedb6cd0-9646-462b-b98c-db84502bca13" />
 # Member Card
 
 팀원 정보를 저장하고 조회할 수 있는 Spring Boot 기반 API 서버입니다.  
