@@ -22,6 +22,11 @@ spring:
       hibernate:
         format_sql: true
 
+cloud:
+  aws:
+    s3:
+      bucket-name: ${s3-bucket-name}
+
 management:
   endpoints:
     web:

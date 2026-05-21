@@ -36,6 +36,9 @@ out/
 ### VS Code ###
 .vscode/
 
+### HTTP clients ###
+.httpRequests/
+
 ### macOS ###
 .DS_Store
 
@@ -43,11 +46,19 @@ out/
 *.log
 logs/
 
+### Runtime / temporary files ###
+tmp/
+temp/
+*.tmp
+*.hprof
+
 ### Environment / local secrets ###
 .env
 .env.*
 !.env.example
 !.env.*.example
+.aws/
+aws/
 
 ### Packaged artifacts ###
 *.jar

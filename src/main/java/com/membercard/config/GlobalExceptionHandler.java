@@ -2,6 +2,7 @@ package com.membercard.config;
 
 import com.membercard.dto.ErrorResponse;
 import com.membercard.exception.MemberNotFoundException;
+import com.membercard.exception.ProfileImageNotFoundException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -41,6 +42,17 @@ public class GlobalExceptionHandler {
         );
     }
 
+    @ExceptionHandler(ProfileImageNotFoundException.class)
+    public ResponseEntity<ErrorResponse> handleProfileImageNotFoundException(
+            ProfileImageNotFoundException e
+    ) {
+        log.error("[API - ERROR] {}", e.getMessage(), e);
+
+        return createErrorResponse(
+                HttpStatus.NOT_FOUND,
+                e.getMessage()
+        );
+    }
 
     @ExceptionHandler(Exception.class)
     public ResponseEntity<ErrorResponse> handleException(

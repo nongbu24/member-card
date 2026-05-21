@@ -15,3 +15,8 @@ spring:
     properties:
       hibernate:
         format_sql: true
+
+cloud:
+  aws:
+    s3:
+      bucket-name: local-member-card-profile-images
